@@ -1,0 +1,158 @@
+:root {
+    --start-button-color: #5e6d01;
+    --reset-button-color: #8C2167;
+    --shoot-button-color: #b3afaf;
+    --button-disabled-color: #b9b551;
+    --button-font-color: #fff;
+    --game-title-section-background-color: #d9ccb7;
+    --score-board-border-color: #9d978b;
+    --score-board-background-color: #d9ccb7;
+    --main-section-border-color: #9d978b;
+    --shooting-area-border-color: #d1cfa1;
+    --shooting-area-background-color: #e6edf4;
+    --player-banner-background-color: #9d978b;
+    --player-score-color: #ea5c7d;
+    --shoot-button-action-color: #407a61;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.center-v-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.section-center {
+    width: 75vw;
+}
+
+.shooting-area {
+    border: 10px solid #9d978b;
+    background-color: var(--shooting-area-background-color);
+    border-left-color: var(--shooting-area-border-color);
+    border-right-color: var(--shooting-area-border-color);
+    height: 300px;
+    border-left-width: 20px;
+    border-right-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gameTitle {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #9d978b;
+    background-color: #d9ccb7;
+}
+
+.playerBanner {
+    position: relative;
+    height: 100%;
+    width: 80px;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    background-color: #9d978b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#p1banner {
+    float: left;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+#p2banner {
+    float: right;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.playerScore {
+    flex: 1;
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.playerScore span {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--player-score-color)
+}
+
+.button {
+    background-color: var(--button-disabled-color);
+    border: none;
+    color: var(--button-font-color);
+    padding: 10px 32px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px #9e9494;
+    font-family: 'Audiowide', cursive;
+}
+
+.StartGame {
+    background-color: var(--start-button-color);
+}
+
+.resetBtn {
+    background-color: var(--reset-button-color);
+}
+
+.ShootBtn {
+    background-color: var(--shoot-button-color);
+}
+
+.disabledButton{
+    background-color: lightgrey;
+}
+
+.shootActionColor{
+    background-color: var(--shoot-button-action-color)
+}
+
+.grid-item {
+    background-color: #d9ccb7;
+    border: 1px solid #9d978b;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Audiowide', cursive;
+}
+
+.result-item {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #d9ccb7;
+    box-shadow: 0 5px 15px grey;
+}
+
+.Score-Board {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 35% 35% auto;
+    border: 1px solid var(--score-board-border-color);
+}
