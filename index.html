@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>shooting game</title>
+
+</head>
+
+<body>
+  <div class="center-v-h">
+    <section class="section-center">
+      <div class="gameTitle" id="gameName">Two player shooting Game</div>
+      <div class="shooting-area">
+        <div class="playerBanner" id="p1banner">Player 1</div>
+        <div class="playerScore">
+          <span id="p1FireScore"></span>
+          <span id="p2FireScore"></span>
+        </div>
+        <div class="playerBanner" id="p2banner">Player 2</div>
+      </div>
+  
+      <br>
+      <button class="button StartGame" id="StartGame">Start Game</button>
+      <button class="button ShootBtn ml10" id="ShootBtn" disabled>Shoot</button>
+      <button class="button resetBtn ml10" id="resetBtn">Reset Button</button>
+  
+      <br><br>
+  
+      <div class="Score-Board">
+        <div class="grid-item" id="grid-item-1">Player 1</div>
+        <div class="grid-item" id="grid-item-3">Won</div>
+        <div class="grid-item" id="grid-item-4">0</div>
+        <div class="grid-item" id="grid-item-5">Player 2</div>
+        <div class="grid-item" id="grid-item-7">Won</div>
+        <div class="grid-item" id="grid-item-8">0</div>
+      </div>
+  
+      <div class="result-item" id="grid-item-9"></div>
+    </section>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
